@@ -1,0 +1,132 @@
+@import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
+* {
+    text-transform: capitalize;
+}
+body {
+    background-image: url('1Darkness.PNG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Press Start 2P';
+}
+footer {
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    letter-spacing: 0px;
+}
+#game-board {
+    background-image: url('1Sol.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    border-radius: 15px;
+    width: 75vmin;
+    height: 75vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+    
+}
+#modul, #modulR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+}
+.title {
+    text-align: center;
+    font-size: 75px;
+    font-weight: bolder;
+    padding: 20px 10px;
+    color: white;
+    /* border: .25vmin solid white; */
+}
+.mssnStatement {
+    background-color: #dad9d569;
+    padding: 10px;
+    border-radius: 5%;
+    color:#032A5D
+}
+.gridarena {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 75px;
+}
+.snake {
+    background-image: url('1pixelGhost.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 75%;
+    border: .25vmin solid black;
+}
+.food {
+    background-image: url('1lightlessghost.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25%;
+    border: .25vmin solid black;
+}
+/* An attempt was made to create buttons for increasing and decreasing speed...
+.btmBar {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+} */
+.bottomScore {
+    color:white;
+    padding: 15px;
+    background-color: #032A5D;
+    border-radius: 15px;
+}
+.start {
+    background-image: url('1vgrd.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    box-shadow: 0 0 2px 3px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+/* An attempt was make to create a standalone reset button..., some reset button styles were placed together with the start button */
+.reset {
+    background-image: url('1consume.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+    box-shadow: 0 0 2px 3px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.start button, .reset button {
+    color: black;
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.start button:hover {
+    background: #CCDAEB;
+    color: white;
+}
+.reset button:hover {
+    background: #CCDAEB;
+    color: white;
+}
+.resetSpan {
+    margin: 15px;
+}
